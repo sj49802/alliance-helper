@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance Helper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Alliance Helper</h1>
+        </header>
+        <main>
+            <div class="teams-container">
+                <div id="teamA" class="team" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2>Team A</h2>
+                    <div class="team-players"></div>
+                </div>
+                <div id="teamB" class="team" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2>Team B</h2>
+                    <div class="team-players"></div>
+                </div>
+            </div>
+            <div class="lobby-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Waiting Lobby</h2>
+                <div class="lobby-players"></div>
+            </div>
+        </main>
+        <footer>
+            <button id="addPlayer" class="game-button">Add Player</button>
+            <button id="resetGame" class="game-button">Reset Game</button>
+            <button id="undo" class="game-button">Undo</button>
+        </footer>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
